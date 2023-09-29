@@ -9,6 +9,8 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.fail;
 
 public class EmployeeTests {
+    private Employee employee;
+    private Map<String, Double> servicesRendered;
 
     @Test
     public void getFullNameReturnsCorrectFormat() {
@@ -35,4 +37,12 @@ public class EmployeeTests {
 
         assertEquals("Salary should remain the same when raise percentage is negative.",100, employee.getSalary(),0.0);
     }
+    public void EmployeeDiscount(){
+        Employee employee = new Employee("Michael", "Myers");
+        Map<String, Double> servicesRendered = new HashMap<>();
+        servicesRendered.put("Walking", 20.00);
+        servicesRendered.put("Grooming", 50.00);
+        servicesRendered.put("Sitting", 100.00);
+    }
+
 }

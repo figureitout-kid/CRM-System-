@@ -4,9 +4,6 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.Assert;
 
-import java.util.List;
-import java.util.Map;
-import java.util.HashMap;
 
 public class PetTests {
     private Pet pet;
